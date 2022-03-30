@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="MPsite.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style>
+        body{
+            direction:rtl;
+            background-color: #FAF6E3;
+
+        }
+        .MPtable{
+            width:100%;
+            border:1px solid silver;
+        }
+
+        .MPheader{
+            width:100%;
+            border: 1px solid silver;
+            height:30px;
+        }
+        .MPmenu{
+            width:100%;
+            border: 1px solid silver;
+            height:20px;
+            text-align:center;
+        }
+        .MPmainPage{
+            width:100%;
+            border: 1px solid silver;
+            height:400px;
+        }
+        .MPfooter{
+            width:100%;
+            border: 1px solid silver;
+            height:20px;
+        }
+        .MPh1{color:crimson; text-align:center; font-size:40px;}
+        .MPh2{color:crimson; text-align:center;font-size:30px;}
+ 
+    </style>
+
+    <!-- ~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+</head>
+<body>
+    <table class="MPtable">
+        <tr>
+            <td style="width:350px; text-align:center;"> <%=loginMsg %> </td>
+            <td class="MPheader"> <h1 id="top" class="MPh1"> כותרת האתר </h1></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="MPmenu" colspan="3">
+                <!-- התפריט ראשי -->
+                [<a href="Animal.aspx">בעלי חיים</a>]
+                [<a href="September.aspx"> לוח שנה - ספטמבר</a>]
+                [<a href="Hanukia.aspx"> חנוכיה </a>]
+                [<a href="Cars.aspx"> מכוניות </a>]
+                [<a href="Page1.aspx">JS-תרגילי חשבון</a>]
+                [<a href="Page2.aspx">JS - בודק ציונים</a>]
+                [<a href="ReigisterPage.aspx"> דף טפסים </a>]
+
+            </td>
+        </tr>
+        <tr>
+            <td class="MPmainPage" colspan="3">
+                <!-- ~~~~~~~~~~~~~ Body Place Holder ~~~~~~~~~~~-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width:30%"></td>
+            <td class="MPfooter" style="width:60%">
+                <h2 class="MPh2">אתר נבנה ע"י בן אביבי</h2>
+
+            </td>
+            <td style="width:30%" dir="ltr"><%=Application["counter"] %></td>
+
+        </tr>
+    </table>
+</body>
+</html>
