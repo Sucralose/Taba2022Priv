@@ -20,7 +20,7 @@ namespace MPsite
             //יצירת מחרוזת לשנת לידה
             int year = DateTime.Now.Year;
             int from = year - 60;
-            int to = year - 5;
+            int to = year - 10;
             //התגת שנים
             for (int y = from; y<to; y++)
             {

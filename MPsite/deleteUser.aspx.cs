@@ -5,18 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-
 namespace MPsite
 {
-    public partial class ShowTable : System.Web.UI.Page
+    public partial class deleteUser : System.Web.UI.Page
     {
         public string st = "";
         public string msg = "";
-        public string sqlSelect = "";
-
+        public string sqlDelete = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["admin"] != "yes")
+            if (Session["admin"].ToString() == "no")
             {
                 msg = "<div class='center'>";
                 msg += "<h1 class='noPerm'>אינך מנהל</h1>";
@@ -29,8 +27,11 @@ namespace MPsite
                 string fileName = "usersDB.mdf";
                 string tableName = "usersTbl";
 
-                sqlSelect = $"SELECT * FROM {tableName}";
-                DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
+                sqlDelete = $"SELECT * FROM {tableName}";
+                DataTable table = Helper.ExecuteDataTable(fileName, sqlDelete);
+
+                string userToDelete = "";
+
                 int length = table.Rows.Count;
                 if (length == 0)
                     msg = " אין נרשמים ";
@@ -51,6 +52,7 @@ namespace MPsite
                     st += "<th> Music </th>";
                     st += "<th> TV </th>";
                     st += "<th> סיסמה </th>";
+                    st += "<th> </th>";
                     st += "</tr>";
                 }
 
@@ -71,9 +73,17 @@ namespace MPsite
                     st += $"<td class='alignCenter'>{ table.Rows[i]["hob4"]} </td>";
                     st += $"<td class='alignCenter'>{ table.Rows[i]["hob5"]} </td>";
                     st += $"<td class='alignCenter'>{ table.Rows[i]["pw"]} </td>";
+                    
+                    userToDelete = table.Rows[i]["userName"].ToString();
+
+                    st += $"<td style='text-align: center; border: 1px solid black;'>";
+                    st += $"<a href= 'DeleteRecord.aspx?userName={userToDelete}'> [delete] </a>";
+                    st += "</td>";
                     st += "</tr>";
                 }
                 msg = $"נרשמו: {length} אנשים";
+
+
             }
         }
     }

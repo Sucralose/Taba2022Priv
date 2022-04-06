@@ -1,6 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowTable.aspx.cs" Inherits="MPsite.ShowTable" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowMaleAndPrefix.aspx.cs" Inherits="MPsite.ShowMaleAndPrefix" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+
+ <style>
         h1{text-align:center; }
         h2{text-align:center;  direction:ltr;}
         h3{text-align:center;}
@@ -10,12 +11,12 @@
         .alignRight{text-align:right}
         .alignLeft{ direction:ltr; text-align:left;}
     </style>
-</asp:Content>
 
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <% if (Session["admin"].ToString() == "yes"){%>
-     <h1>טבלת משתמשים</h1>
+        <% if (Session["admin"].ToString() == "yes"){%>
+     <h1>טבלת כל המשתמשים הזכרים שקידומת הטלפון שלהם היא 054</h1>
     <%}%>
        
         <h2> <%= sqlSelect %> </h2>

@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowTable.aspx.cs" Inherits="MPsite.ShowTable" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowHob1AndBorn2000To2006.aspx.cs" Inherits="MPsite.ShowHob1AndBorn2000To2006" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+ <style>
         h1{text-align:center; }
         h2{text-align:center;  direction:ltr;}
         h3{text-align:center;}
@@ -11,11 +11,9 @@
         .alignLeft{ direction:ltr; text-align:left;}
     </style>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <% if (Session["admin"].ToString() == "yes"){%>
-     <h1>טבלת משתמשים</h1>
+  <% if (Session["admin"].ToString() == "yes"){%>
+     <h1>  טבלת כל המשתמשים שאוהבים מחשבים ונולדו בן השנים 2000 ל2006  </h1>
     <%}%>
        
         <h2> <%= sqlSelect %> </h2>
@@ -25,5 +23,4 @@
         </table>
         
         <h3><%=msg %></h3>
-
 </asp:Content>

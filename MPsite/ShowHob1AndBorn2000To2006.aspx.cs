@@ -5,10 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-
 namespace MPsite
 {
-    public partial class ShowTable : System.Web.UI.Page
+    public partial class ShowHob1AndBorn2000To2006 : System.Web.UI.Page
     {
         public string st = "";
         public string msg = "";
@@ -29,7 +28,7 @@ namespace MPsite
                 string fileName = "usersDB.mdf";
                 string tableName = "usersTbl";
 
-                sqlSelect = $"SELECT * FROM {tableName}";
+                sqlSelect = $"SELECT * FROM {tableName} where hob1='T' and ( YearBorn between 2000 and 2006 ) ";
                 DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
                 int length = table.Rows.Count;
                 if (length == 0)
@@ -73,7 +72,7 @@ namespace MPsite
                     st += $"<td class='alignCenter'>{ table.Rows[i]["pw"]} </td>";
                     st += "</tr>";
                 }
-                msg = $"נרשמו: {length} אנשים";
+                msg = $"נמצאו: {length} אנשים";
             }
         }
     }

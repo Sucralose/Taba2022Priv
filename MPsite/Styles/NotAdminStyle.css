@@ -1,0 +1,23 @@
+﻿.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-color: black;
+    max-width: 30%;
+    min-width: 100px;
+    height: auto;
+    background-color: hsl(346, 100%, 23%,10%)
+}
+
+.noPerm {
+    font-weight: 700;
+    color: red;
+    font-family: Calibri;
+}
+
+.linkToIndex {
+    font-weight:600;
+    color:indianred;
+    font-family:Calibri;
+}

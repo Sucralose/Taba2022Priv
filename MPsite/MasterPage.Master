@@ -4,10 +4,20 @@
 
 <html>
 <head runat="server">
+    <script>
+        setInterval("myTimer()", 1000);
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("myTime").innerHTML = t;
+        }
+    </script>
+
+    <link href="Styles/NotAdminStyle.css" rel="stylesheet" />
     <style>
         body{
             direction:rtl;
-            background-color: #FAF6E3;
+            background-color: #E0F1FF;
 
         }
         .MPtable{
@@ -16,7 +26,7 @@
         }
 
         .MPheader{
-            width:100%;
+            width:60%;
             border: 1px solid silver;
             height:30px;
         }
@@ -38,31 +48,31 @@
         }
         .MPh1{color:crimson; text-align:center; font-size:40px;}
         .MPh2{color:crimson; text-align:center;font-size:30px;}
+        .myTime{
+            text-align:center;
+            font-family:Arial;
+            font-size:1.5rem
+        }
  
     </style>
 
     <!-- ~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~-->
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 </head>
 <body>
     <table class="MPtable">
         <tr>
-            <td style="width:350px; text-align:center;"> <%=loginMsg %> </td>
+            <td style="width:20%; text-align:center;"> <%=loginMsg %> </td>
             <td class="MPheader"> <h1 id="top" class="MPh1"> כותרת האתר </h1></td>
-            <td></td>
+            <td style="width:20%"><h3 id ="myTime" class="myTime"> </h3></td>
         </tr>
         <tr>
             <td class="MPmenu" colspan="3">
                 <!-- התפריט ראשי -->
-                [<a href="Animal.aspx">בעלי חיים</a>]
-                [<a href="September.aspx"> לוח שנה - ספטמבר</a>]
-                [<a href="Hanukia.aspx"> חנוכיה </a>]
-                [<a href="Cars.aspx"> מכוניות </a>]
-                [<a href="Page1.aspx">JS-תרגילי חשבון</a>]
-                [<a href="Page2.aspx">JS - בודק ציונים</a>]
-                [<a href="ReigisterPage.aspx"> דף טפסים </a>]
+                [<a href="loginAdmin.aspx"> כניסת מנהל </a>]
 
             </td>
         </tr>
@@ -76,12 +86,12 @@
         </tr>
 
         <tr>
-            <td style="width:30%"></td>
-            <td class="MPfooter" style="width:60%">
-                <h2 class="MPh2">אתר נבנה ע"י בן אביבי</h2>
+            <td style="width:20%"></td>
+            <td class="MPfooter" style="width:60%;">
+                <h2 class="MPh2">אתר נבנה ע"י שם</h2>
 
             </td>
-            <td style="width:30%" dir="ltr"><%=Application["counter"] %></td>
+            <td style="width:20%" dir="ltr"><%=Application["counter"] %> -מונה מבקרים </td>
 
         </tr>
     </table>

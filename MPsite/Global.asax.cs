@@ -16,19 +16,31 @@ namespace MPsite
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //מונה מבקרים
             Application["counter"] = 0;
+
+            //סקר
+            Application["q1"] = 0;
+            Application["q2"] = 0;
+            Application["q3"] = 0;
+            Application["q4"] = 0;
+
         }
 
         void Session_start(object sender, EventArgs e)
         {
             Session["uName"] = "אורח";
             Session["userFName"] = "אורח";
+            Session["admin"] = "no";
+            Session["voted"] = false;
         }
 
         void Session_end(object sender, EventArgs e)
         {
             Session["uName"] = "אורח";
             Session["userFName"] = "אורח";
+            Session["admin"] = "no";
+            Session["voted"] = false;
         }
     }
 }

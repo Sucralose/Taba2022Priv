@@ -20,15 +20,25 @@ namespace MPsite
             loginMsg += Session["userFName"];
             loginMsg += "</h3>";
 
-            if( Session["uName"].ToString() == "אורח" )
+            if (Session["admin"].ToString() == "yes") //Managers
             {
-                loginMsg += "[<a href = 'login.aspx'>התחבר</a>]<br />";
-                loginMsg += "[<a href = 'ReigisterPage.aspx'>הירשם</a>]<br />";
+                loginMsg += "[<a href = 'adminPage.aspx'> דף מנהל </a>]";
+                loginMsg += "[<a href = 'logout.aspx'> התנתק </a>]";
+
             }
             else
             {
-                loginMsg += "[<a href = 'logout.aspx'> התנתק </a>]";
+                if ( Session["uName"].ToString() == "אורח" ) //Guests
+                {
+                    loginMsg += "[<a href = 'login.aspx'>התחבר</a>]<br />";
+                    loginMsg += "[<a href = 'ReigisterPage.aspx'>הירשם</a>]<br />";
+                }
+                else //Users
+                {
+                    loginMsg += "[<a href = 'logout.aspx'> התנתק </a>]";
+                }
             }
+            
         }
     }
 }

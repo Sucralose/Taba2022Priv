@@ -36,12 +36,14 @@ namespace MPsite
                 }
                 else
                 {
+                    Application.Lock();
                     Application["counter"] = (int)Application["counter"] + 1;
+                    Application.UnLock();
 
                     Session["uName"] = table.Rows[0]["userName"];
                     Session["userFName"] = table.Rows[0]["firstName"];
 
-                    Response.Redirect("Animal.aspx");// Change to defualt page.
+                    Response.Redirect("index.aspx");
                 }
             }
 

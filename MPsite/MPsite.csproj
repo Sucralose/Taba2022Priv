@@ -105,20 +105,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Animal.aspx" />
-    <Content Include="Cars.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="adminPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Elephant.aspx" />
+    <Content Include="DeleteRecord.aspx" />
+    <Content Include="deleteUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Giraffe.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -128,71 +125,23 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Hanukia.aspx" />
-    <Content Include="Honda.aspx" />
-    <Content Include="Kippur.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="loginAdmin.aspx" />
     <Content Include="logout.aspx" />
-    <Content Include="pics\Checkmark.png" />
-    <Content Include="pics\Crossmark.png" />
-    <Content Include="RoshHashana.aspx" />
-    <Content Include="September.aspx" />
-    <Content Include="Shabat.aspx" />
+    <Content Include="pics\Lime.png" />
+    <Content Include="pics\Purple.png" />
+    <Content Include="pics\Red.png" />
+    <Content Include="pics\Yellow.png" />
+    <Content Include="ShowFemaleAndGmail.aspx" />
+    <Content Include="ShowHob1AndBorn2000To2006.aspx" />
+    <Content Include="ShowMaleAndPrefix.aspx" />
+    <Content Include="ShowTelAvivOrModiin.aspx" />
+    <Content Include="Styles\NotAdminStyle.css" />
     <Content Include="ShowTable.aspx" />
-    <Content Include="Sockut.aspx" />
-    <Content Include="Toyota.aspx" />
-    <Content Include="Page1.aspx" />
-    <Content Include="Page2.aspx" />
+    <Content Include="SimpleQuery.aspx" />
     <Content Include="ReigisterPage.aspx" />
-    <Content Include="Wolf.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Lion.aspx" />
-    <Content Include="Penguin.aspx" />
-    <Content Include="Cat.aspx" />
-    <Content Include="pics\Car1.png" />
-    <Content Include="pics\Car2.png" />
-    <Content Include="pics\Car3.png" />
-    <Content Include="pics\CarsLogo.png" />
-    <Content Include="pics\Cat1.png" />
-    <Content Include="pics\Cat2.png" />
-    <Content Include="pics\Cat3.png" />
-    <Content Include="pics\Elephant1.png" />
-    <Content Include="pics\Elephant2.png" />
-    <Content Include="pics\Elephant3.png" />
-    <Content Include="pics\Giraffe1.png" />
-    <Content Include="pics\Giraffe2.png" />
-    <Content Include="pics\Giraffe3.png" />
-    <Content Include="pics\Hanuk0.png" />
-    <Content Include="pics\Hanuk1.png" />
-    <Content Include="pics\Hanuk2.png" />
-    <Content Include="pics\Hanuk3.png" />
-    <Content Include="pics\Hanuk4.png" />
-    <Content Include="pics\Hanuk5.png" />
-    <Content Include="pics\Hanuk6.png" />
-    <Content Include="pics\Hanuk7.png" />
-    <Content Include="pics\Hanuk8.png" />
-    <Content Include="pics\Honda1.png" />
-    <Content Include="pics\Honda2.png" />
-    <Content Include="pics\Honda3.png" />
-    <Content Include="pics\HondaLogo.png" />
-    <Content Include="pics\Kippur.png" />
-    <Content Include="pics\Lion1.png" />
-    <Content Include="pics\Lion2.png" />
-    <Content Include="pics\Lion3.png" />
-    <Content Include="pics\newYear.png" />
-    <Content Include="pics\Penguin1.png" />
-    <Content Include="pics\Penguin2.png" />
-    <Content Include="pics\Penguin3.png" />
-    <Content Include="pics\ReturnArrow.png" />
-    <Content Include="pics\Shabat.png" />
-    <Content Include="pics\Sockut.png" />
-    <Content Include="pics\Toyota1.png" />
-    <Content Include="pics\Toyota2.png" />
-    <Content Include="pics\Toyota3.png" />
-    <Content Include="pics\ToyotaLogo.png" />
-    <Content Include="pics\Wolf1.png" />
-    <Content Include="pics\Wolf2.png" />
-    <Content Include="pics\Wolf3.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -222,6 +171,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Survey.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -229,37 +179,16 @@
     <Content Include="MasterPage.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.aspx.cs">
-      <DependentUpon>Animal.aspx</DependentUpon>
+    <Compile Include="adminPage.aspx.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Animal.aspx.designer.cs">
-      <DependentUpon>Animal.aspx</DependentUpon>
+    <Compile Include="adminPage.aspx.designer.cs">
+      <DependentUpon>adminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\Helper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Cars.aspx.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cars.aspx.designer.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,50 +196,29 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Elephant.aspx.cs">
-      <DependentUpon>Elephant.aspx</DependentUpon>
+    <Compile Include="DeleteRecord.aspx.cs">
+      <DependentUpon>DeleteRecord.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Elephant.aspx.designer.cs">
-      <DependentUpon>Elephant.aspx</DependentUpon>
+    <Compile Include="DeleteRecord.aspx.designer.cs">
+      <DependentUpon>DeleteRecord.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Giraffe.aspx.cs">
-      <DependentUpon>Giraffe.aspx</DependentUpon>
+    <Compile Include="deleteUser.aspx.cs">
+      <DependentUpon>deleteUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Giraffe.aspx.designer.cs">
-      <DependentUpon>Giraffe.aspx</DependentUpon>
+    <Compile Include="deleteUser.aspx.designer.cs">
+      <DependentUpon>deleteUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Hanukia.aspx.cs">
-      <DependentUpon>Hanukia.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Hanukia.aspx.designer.cs">
-      <DependentUpon>Hanukia.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Honda.aspx.cs">
-      <DependentUpon>Honda.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Honda.aspx.designer.cs">
-      <DependentUpon>Honda.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Kippur.aspx.cs">
-      <DependentUpon>Kippur.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Kippur.aspx.designer.cs">
-      <DependentUpon>Kippur.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Lion.aspx.cs">
-      <DependentUpon>Lion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Lion.aspx.designer.cs">
-      <DependentUpon>Lion.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -319,6 +227,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginAdmin.aspx.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginAdmin.aspx.designer.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -326,41 +241,27 @@
     <Compile Include="logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Penguin.aspx.cs">
-      <DependentUpon>Penguin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Penguin.aspx.designer.cs">
-      <DependentUpon>Penguin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cat.aspx.cs">
-      <DependentUpon>Cat.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cat.aspx.designer.cs">
-      <DependentUpon>Cat.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoshHashana.aspx.cs">
-      <DependentUpon>RoshHashana.aspx</DependentUpon>
+    <Compile Include="ShowFemaleAndGmail.aspx.cs">
+      <DependentUpon>ShowFemaleAndGmail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RoshHashana.aspx.designer.cs">
-      <DependentUpon>RoshHashana.aspx</DependentUpon>
+    <Compile Include="ShowFemaleAndGmail.aspx.designer.cs">
+      <DependentUpon>ShowFemaleAndGmail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="September.aspx.cs">
-      <DependentUpon>September.aspx</DependentUpon>
+    <Compile Include="ShowHob1AndBorn2000To2006.aspx.cs">
+      <DependentUpon>ShowHob1AndBorn2000To2006.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="September.aspx.designer.cs">
-      <DependentUpon>September.aspx</DependentUpon>
+    <Compile Include="ShowHob1AndBorn2000To2006.aspx.designer.cs">
+      <DependentUpon>ShowHob1AndBorn2000To2006.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Shabat.aspx.cs">
-      <DependentUpon>Shabat.aspx</DependentUpon>
+    <Compile Include="ShowMaleAndPrefix.aspx.cs">
+      <DependentUpon>ShowMaleAndPrefix.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Shabat.aspx.designer.cs">
-      <DependentUpon>Shabat.aspx</DependentUpon>
+    <Compile Include="ShowMaleAndPrefix.aspx.designer.cs">
+      <DependentUpon>ShowMaleAndPrefix.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShowTable.aspx.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
@@ -368,6 +269,20 @@
     </Compile>
     <Compile Include="ShowTable.aspx.designer.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTelAvivOrModiin.aspx.cs">
+      <DependentUpon>ShowTelAvivOrModiin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowTelAvivOrModiin.aspx.designer.cs">
+      <DependentUpon>ShowTelAvivOrModiin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleQuery.aspx.cs">
+      <DependentUpon>SimpleQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimpleQuery.aspx.designer.cs">
+      <DependentUpon>SimpleQuery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -390,19 +305,12 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Sockut.aspx.cs">
-      <DependentUpon>Sockut.aspx</DependentUpon>
+    <Compile Include="Survey.aspx.cs">
+      <DependentUpon>Survey.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sockut.aspx.designer.cs">
-      <DependentUpon>Sockut.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Toyota.aspx.cs">
-      <DependentUpon>Toyota.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Toyota.aspx.designer.cs">
-      <DependentUpon>Toyota.aspx</DependentUpon>
+    <Compile Include="Survey.aspx.designer.cs">
+      <DependentUpon>Survey.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -411,33 +319,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Page1.aspx.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Page1.aspx.designer.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page2.aspx.cs">
-      <DependentUpon>Page2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Page2.aspx.designer.cs">
-      <DependentUpon>Page2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ReigisterPage.aspx.cs">
       <DependentUpon>ReigisterPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ReigisterPage.aspx.designer.cs">
       <DependentUpon>ReigisterPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Wolf.aspx.cs">
-      <DependentUpon>Wolf.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Wolf.aspx.designer.cs">
-      <DependentUpon>Wolf.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

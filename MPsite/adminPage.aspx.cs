@@ -8,7 +8,7 @@ using System.Data;
 
 namespace MPsite
 {
-    public partial class ShowTable : System.Web.UI.Page
+    public partial class adminPage : System.Web.UI.Page
     {
         public string st = "";
         public string msg = "";
@@ -16,7 +16,7 @@ namespace MPsite
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["admin"] != "yes")
+            if (Session["admin"] == "no")
             {
                 msg = "<div class='center'>";
                 msg += "<h1 class='noPerm'>אינך מנהל</h1>";

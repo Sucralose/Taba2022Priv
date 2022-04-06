@@ -5,6 +5,7 @@
         table{
             margin-left:auto;
             margin-right:auto;
+            border: 1px solid black;
         }
         input{
             text-align:center;
@@ -22,6 +23,7 @@
 
     <script>
         function checkForm() {
+            
             var valid = true;
             var element, elementMessage;
             //---בדיקת תקינות שם משתמש---
@@ -113,25 +115,26 @@
             } else {
                 elementMessage.style.display = "none";
             }
-
-          /*  //תקינות תחביבים
+            
+            //תקינות תחביבים
             element = document.getElementsByName("hobies");
             elementMessage = document.getElementById("mHobies");
-            var hobChecked = false; 
-         
-            for (var i = 0; i < hobies.length; i++)
-                if (element[i].checked)
+            let hobChecked = false;  
+            for (let i = 1; i < element.length; i++) {
+                if (element[i].checked) {
                     hobChecked = true;
-
+                }          
+            }
             if (hobChecked == false) {
                 elementMessage.value = "לא נבחר תחביב";
                 elementMessage.style.display = "inline";
-                valid =false;
+                valid = false;
+
             }
-            else
-                document.getElementById("mHobies").style.display = "none";*/
-
-
+            else {
+                elementMessage.style.display = "none";
+            }
+                
             return valid;
         }
     </script>
@@ -140,6 +143,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div dir="rtl" style="text-align:center;">
         <form method="post" runat="server" onsubmit="return checkForm();"> 
+            <h1 style="text-align:center;"> הרשמה לאתר </h1>
             <table>
                 <tr>
                     <td> שם משתמש: </td>
@@ -196,7 +200,7 @@
                             <option value="058">058</option>
                         </select>
 
-                        &nbsp;&nbsp; - &nbsp;&nbsp;
+                        &nbsp;&nbsp; ━ &nbsp;&nbsp;
                         <input type="text" name="phoneNum" id="phoneNum" />
                     </td>
                     <td>
@@ -216,13 +220,22 @@
                     <td> ישוב מגורים: </td>
                     <td>
                         <select name="city" id="city">
-                            <option value="חיפה">חיפה</option>
-                            <option value="תל-אביב">תל-אביב</option>
-                            <option value="חריש">חריש</option>
-                            <option value="מודיעין" selected> מודיעין </option>
+                            
                             <option value="ירושלים">ירושלים</option>
+                            <option value="תל-אביב">תל-אביב</option>
+                            <option value="חיפה">חיפה</option>
+                            <option value="ראשון-לציון">ראשון-לציון</option>
+                            <option value="פתח-תקווה">פתח-תקווה</option>
+                            <option value="אשדוד">אשדוד</option>
+                            <option value="נתניה">נתניה</option>
+                            <option value="באר-שבע">באר-שבע</option>
+                            <option value="אשקלון">אשקלון</option>
+                            <option value="מודיעין" selected> מודיעין </option>
+                            <option value="לוד">לוד</option>
+                            <option value="אילת">אילת</option>
                             <option value="רמלה">רמלה</option>
                             <option value="חולון">חולון</option>
+
                             <option value ="צפון" >צפון</option>
                             <option value ="דרום">דרום</option>
                             <option value="מרכז">מרכז</option>
@@ -233,11 +246,11 @@
                 <tr>
                     <td>תחביבים</td>
                     <td>
-                    <input type="checkbox" name="hobies" value="1" />Hob1
-                    <input type="checkbox" name="hobies" value="2" />Hob2
-                    <input type="checkbox" name="hobies" value="3" />Hob3
-                    <input type="checkbox" name="hobies" value="4" />Hob4
-                    <input type="checkbox" name="hobies" value="5" />Hob5
+                    <input type="checkbox" name="hobies" value="1" />Computers
+                    <input type="checkbox" name="hobies" value="2" />Movies
+                    <input type="checkbox" name="hobies" value="3" />Cooking
+                    <input type="checkbox" name="hobies" value="4" />Music
+                    <input type="checkbox" name="hobies" value="5" />TV
                     </td>
                     <td>
 
