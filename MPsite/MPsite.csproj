@@ -137,6 +137,7 @@
     <Content Include="ShowHob1AndBorn2000To2006.aspx" />
     <Content Include="ShowMaleAndPrefix.aspx" />
     <Content Include="ShowTelAvivOrModiin.aspx" />
+    <Content Include="Styles\MasterStyles.css" />
     <Content Include="Styles\NotAdminStyle.css" />
     <Content Include="ShowTable.aspx" />
     <Content Include="SimpleQuery.aspx" />

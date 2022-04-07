@@ -14,47 +14,7 @@
     </script>
 
     <link href="Styles/NotAdminStyle.css" rel="stylesheet" />
-    <style>
-        body{
-            direction:rtl;
-            background-color: #E0F1FF;
-
-        }
-        .MPtable{
-            width:100%;
-            border:1px solid silver;
-        }
-
-        .MPheader{
-            width:60%;
-            border: 1px solid silver;
-            height:30px;
-        }
-        .MPmenu{
-            width:100%;
-            border: 1px solid silver;
-            height:20px;
-            text-align:center;
-        }
-        .MPmainPage{
-            width:100%;
-            border: 1px solid silver;
-            height:400px;
-        }
-        .MPfooter{
-            width:100%;
-            border: 1px solid silver;
-            height:20px;
-        }
-        .MPh1{color:crimson; text-align:center; font-size:40px;}
-        .MPh2{color:crimson; text-align:center;font-size:30px;}
-        .myTime{
-            text-align:center;
-            font-family:Arial;
-            font-size:1.5rem
-        }
- 
-    </style>
+    <link href="Styles/MasterStyles.css" rel="stylesheet" />
 
     <!-- ~~~~~~~~~~~~~ Head Place Holder ~~~~~~~~~~~-->
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -72,8 +32,14 @@
         <tr>
             <td class="MPmenu" colspan="3">
                 <!-- התפריט ראשי -->
-                [<a href="loginAdmin.aspx"> כניסת מנהל </a>]
 
+                [<a href="loginAdmin.aspx"> כניסת מנהל </a>]
+                [<a href="Survey.aspx">סקר</a>]
+                <!-- בחירה רק למשתמשים רשומים--->
+                <%if (Session["uName"].ToString() != "אורח"){ %>
+
+                <%} %>
+               
             </td>
         </tr>
         <tr>
