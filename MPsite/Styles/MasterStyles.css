@@ -5,19 +5,19 @@
 
 .MPtable {
     width: 100%;
-    border: 1px solid silver;
+    border: 2px solid silver;
 }
 
 .MPheader {
     width: 60%;
-    border: 1px solid silver;
     height: 30px;
+    border: 1px solid silver;
+    
 }
 
 .MPmenu {
     width: 100%;
     border: 1px solid silver;
-    height: 20px;
     text-align: center;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .MPfooter {
-    width: 100%;
-    border: 1px solid silver;
+
+
     height: 20px;
 }
 
@@ -37,16 +37,19 @@
     color: crimson;
     text-align: center;
     font-size: 40px;
+    font-family: Arial;
 }
 
 .MPh2 {
     color: crimson;
     text-align: center;
     font-size: 30px;
+    font-family: Arial;
 }
 
 .myTime {
     text-align: center;
     font-family: Arial;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    font-family:Arial;
 }

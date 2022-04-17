@@ -27,9 +27,9 @@ public class Helper
         //string connString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\" + fileName + " Integrated Security = True";
         //string connString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = " + path + " Integrated Security = True";
         
-		//string connString = @"";
+		string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\taba\MPsite\MPsite\App_Data\usersDB.mdf;Integrated Security=True;Connect Timeout=30";
         
-		string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
+		//string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True;Connect Timeout=30";
         
 		SqlConnection conn = new SqlConnection(connString);
             return conn;

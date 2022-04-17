@@ -22,8 +22,8 @@ namespace MPsite
 
             if (Session["admin"].ToString() == "yes") //Managers
             {
-                loginMsg += "[<a href = 'adminPage.aspx'> דף מנהל </a>]";
-                loginMsg += "[<a href = 'logout.aspx'> התנתק </a>]";
+                loginMsg += "[<a href = '../AdminPages/adminPage.aspx'> דף מנהל </a>]";
+                loginMsg += "[<a href = '../logout.aspx'> התנתק </a>]";
 
             }
             else

@@ -105,15 +105,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="adminPage.aspx" />
+    <Content Include="AdminPages\adminPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="DeleteRecord.aspx" />
-    <Content Include="deleteUser.aspx" />
+    <Content Include="AdminPages\DeleteRecord.aspx" />
+    <Content Include="AdminPages\deleteUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -129,18 +129,32 @@
     <Content Include="login.aspx" />
     <Content Include="loginAdmin.aspx" />
     <Content Include="logout.aspx" />
+    <Content Include="pics\ChickenNuggets.jpg" />
+    <Content Include="pics\CrunchChocolate.jpg" />
+    <Content Include="pics\Kebab.jpg" />
+    <Content Include="pics\KinamonRoll.jpg" />
     <Content Include="pics\Lime.png" />
+    <Content Include="pics\Pizza.jpg" />
     <Content Include="pics\Purple.png" />
+    <Content Include="pics\Ravioli.jpg" />
     <Content Include="pics\Red.png" />
+    <Content Include="pics\RedChicken.jpg" />
+    <Content Include="pics\RedCuba.jpg" />
+    <Content Include="pics\ShoitLevana.jpg" />
+    <Content Include="pics\VegeterianSushi.jpg" />
     <Content Include="pics\Yellow.png" />
-    <Content Include="ShowFemaleAndGmail.aspx" />
-    <Content Include="ShowHob1AndBorn2000To2006.aspx" />
-    <Content Include="ShowMaleAndPrefix.aspx" />
-    <Content Include="ShowTelAvivOrModiin.aspx" />
+    <Content Include="AdminPages\ShowFemaleAndGmail.aspx" />
+    <Content Include="AdminPages\ShowHob1AndBorn2000To2006.aspx" />
+    <Content Include="AdminPages\ShowMaleAndPrefix.aspx" />
+    <Content Include="AdminPages\ShowTelAvivOrModiin.aspx" />
+    <Content Include="RecepiePages\MainDishAll.aspx" />
+    <Content Include="RecepiePages\Pizza.aspx" />
+    <Content Include="RecepiePages\RedCuba.aspx" />
+    <Content Include="RecepiePages\ShoitLevana.aspx" />
     <Content Include="Styles\MasterStyles.css" />
     <Content Include="Styles\NotAdminStyle.css" />
-    <Content Include="ShowTable.aspx" />
-    <Content Include="SimpleQuery.aspx" />
+    <Content Include="AdminPages\ShowTable.aspx" />
+    <Content Include="AdminPages\SimpleQuery.aspx" />
     <Content Include="ReigisterPage.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -172,6 +186,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Styles\RcepiePageStyle.css" />
     <Content Include="Survey.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -180,11 +195,11 @@
     <Content Include="MasterPage.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminPage.aspx.cs">
+    <Compile Include="AdminPages\adminPage.aspx.cs">
       <DependentUpon>adminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="adminPage.aspx.designer.cs">
+    <Compile Include="AdminPages\adminPage.aspx.designer.cs">
       <DependentUpon>adminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -197,18 +212,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DeleteRecord.aspx.cs">
+    <Compile Include="AdminPages\DeleteRecord.aspx.cs">
       <DependentUpon>DeleteRecord.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DeleteRecord.aspx.designer.cs">
+    <Compile Include="AdminPages\DeleteRecord.aspx.designer.cs">
       <DependentUpon>DeleteRecord.aspx</DependentUpon>
     </Compile>
-    <Compile Include="deleteUser.aspx.cs">
+    <Compile Include="AdminPages\deleteUser.aspx.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="deleteUser.aspx.designer.cs">
+    <Compile Include="AdminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -243,47 +258,75 @@
       <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowFemaleAndGmail.aspx.cs">
+    <Compile Include="AdminPages\ShowFemaleAndGmail.aspx.cs">
       <DependentUpon>ShowFemaleAndGmail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShowFemaleAndGmail.aspx.designer.cs">
+    <Compile Include="AdminPages\ShowFemaleAndGmail.aspx.designer.cs">
       <DependentUpon>ShowFemaleAndGmail.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ShowHob1AndBorn2000To2006.aspx.cs">
+    <Compile Include="AdminPages\ShowHob1AndBorn2000To2006.aspx.cs">
       <DependentUpon>ShowHob1AndBorn2000To2006.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShowHob1AndBorn2000To2006.aspx.designer.cs">
+    <Compile Include="AdminPages\ShowHob1AndBorn2000To2006.aspx.designer.cs">
       <DependentUpon>ShowHob1AndBorn2000To2006.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ShowMaleAndPrefix.aspx.cs">
+    <Compile Include="AdminPages\ShowMaleAndPrefix.aspx.cs">
       <DependentUpon>ShowMaleAndPrefix.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShowMaleAndPrefix.aspx.designer.cs">
+    <Compile Include="AdminPages\ShowMaleAndPrefix.aspx.designer.cs">
       <DependentUpon>ShowMaleAndPrefix.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ShowTable.aspx.cs">
+    <Compile Include="AdminPages\ShowTable.aspx.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShowTable.aspx.designer.cs">
+    <Compile Include="AdminPages\ShowTable.aspx.designer.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ShowTelAvivOrModiin.aspx.cs">
+    <Compile Include="AdminPages\ShowTelAvivOrModiin.aspx.cs">
       <DependentUpon>ShowTelAvivOrModiin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShowTelAvivOrModiin.aspx.designer.cs">
+    <Compile Include="AdminPages\ShowTelAvivOrModiin.aspx.designer.cs">
       <DependentUpon>ShowTelAvivOrModiin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SimpleQuery.aspx.cs">
+    <Compile Include="AdminPages\SimpleQuery.aspx.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SimpleQuery.aspx.designer.cs">
+    <Compile Include="AdminPages\SimpleQuery.aspx.designer.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\MainDishAll.aspx.cs">
+      <DependentUpon>MainDishAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\MainDishAll.aspx.designer.cs">
+      <DependentUpon>MainDishAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\Pizza.aspx.cs">
+      <DependentUpon>Pizza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\Pizza.aspx.designer.cs">
+      <DependentUpon>Pizza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\RedCuba.aspx.cs">
+      <DependentUpon>RedCuba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\RedCuba.aspx.designer.cs">
+      <DependentUpon>RedCuba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\ShoitLevana.aspx.cs">
+      <DependentUpon>ShoitLevana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\ShoitLevana.aspx.designer.cs">
+      <DependentUpon>ShoitLevana.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

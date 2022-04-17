@@ -1,6 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="MPsite.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MainDishAll.aspx.cs" Inherits="MPsite.RecepiePages.MainDishAll" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+    <link href="../Styles/MasterStyles.css" rel="stylesheet" />
+     <style>
         .FlexContainer{
             display:flex;
             flex-wrap: wrap; /*אפשרות לרדת מתחת לשורה אחת*/
@@ -41,31 +42,31 @@
     </style>
 
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    <h1>דף הבית</h1>
+
+    <h1>מנות עיקריות</h1>
     <hr />
     <br />
     <div class="FlexContainer">       
         <div class="Card">
-            <div class="insideCardContainer">
-                <img src="pics/ChickenNuggets.jpg" />
-                <h4> מנות קטנות </h4>
-            </div>
-        </div>
-        <div class="Card">
-            <a href="RecepiePages/MainDishAll.aspx">
-            <div class="insideCardContainer">
-                <img src="pics/Pizza.jpg" />
-                <h4> מנות גדולות  </h4>
-            </div>    
+            <a href="Pizza.aspx" class="insideCardContainer">
+                <img src="../pics/Pizza.jpg" />
+                <h4> פיצה </h4>
             </a>
         </div>
         <div class="Card">
-            <div class="insideCardContainer">
-                <img src="pics/CrunchChocolate.jpg" />
-                <h4> קינוחים </h4>
-            </div>    
-        </div>    
+            <a href="RedCuba.aspx" class="insideCardContainer">
+                <img src="../pics/RedCuba.jpg" />
+                <h4> מרק קובה סלק </h4>   
+            </a>
+        </div>
+        <div class="Card">
+            <a href="ShoitLevana.aspx" class="insideCardContainer">
+                <img src="../pics/ShoitLevana.jpg" />
+                <h4> גולאש עם שעועית לבנה </h4>
+            </a>
+        </div>
+        
     </div>
 </asp:Content>
