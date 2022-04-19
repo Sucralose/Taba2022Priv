@@ -19,6 +19,7 @@ namespace MPsite
             if (Session["admin"] != "yes")
             {
                 msg = "<div class='center'>";
+                msg += "<img src='../pics/Lock.png' class='lockImg' />";
                 msg += "<h1 class='noPerm'>אינך מנהל</h1>";
                 msg += "<h3 class='noPerm'> אין לך הרשאה לצפות בדף זה</h3>";
                 msg += "<a href='index.aspx' class='linkToIndex'><h4>[ חזור לדף הראשי ]</h4></a>";

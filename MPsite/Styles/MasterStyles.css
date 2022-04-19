@@ -1,6 +1,7 @@
 ﻿body {
     direction: rtl;
     background-color: #E0F1FF;
+    font-family: Arial;
 }
 
 .MPtable {
@@ -28,8 +29,6 @@
 }
 
 .MPfooter {
-
-
     height: 20px;
 }
 
@@ -37,19 +36,16 @@
     color: crimson;
     text-align: center;
     font-size: 40px;
-    font-family: Arial;
 }
 
 .MPh2 {
     color: crimson;
     text-align: center;
     font-size: 30px;
-    font-family: Arial;
 }
 
 .myTime {
     text-align: center;
     font-family: Arial;
     font-size: 1.5rem;
-    font-family:Arial;
 }

@@ -26,18 +26,23 @@
     <table class="MPtable">
         <tr>
             <td style="width:20%; text-align:center;"> <%=loginMsg %> </td>
-            <td class="MPheader"> <h1 id="top" class="MPh1"> דף המתכונים שלי </h1></td>
+            <td class="MPheader"> <h1 id="top" class="MPh1"> דף מתכונים </h1></td>
             <td style="width:20%"><h3 id ="myTime" class="myTime"> </h3></td>
         </tr>
         <tr>
             <td class="MPmenu" colspan="3">
                 <!-- התפריט ראשי -->
 
+                [<a href="../index.aspx"> דף הבית </a>]
                 [<a href="../loginAdmin.aspx"> כניסת מנהל </a>]
-                [<a href="../Survey.aspx">סקר</a>]
+                [<a href="../Survey.aspx"> סקר </a>]
+                [<a href="ImageGallery.aspx"> גלריית תמונות </a>]
+                [<a href="../RecepiePages/DesertDishAll.aspx"> קינוחים </a>]
+                [<a href="../RecepiePages/MainDishAll.aspx"> מנות גדולות </a>]
+                [<a href="../RecepiePages/StarterDishAll.aspx"> מנות קטנות </a>]
                 <!-- בחירה רק למשתמשים רשומים--->
                 <%if (Session["uName"].ToString() != "אורח"){ %>
-
+                    [<a href="../LoggedInUsers/Forum.aspx"> פורום </a>]
                 <%} %>
                
             </td>

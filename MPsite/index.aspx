@@ -48,24 +48,22 @@
     <br />
     <div class="FlexContainer">       
         <div class="Card">
-            <div class="insideCardContainer">
+            <a href="RecepiePages/StarterDishAll" class="insideCardContainer">
                 <img src="pics/ChickenNuggets.jpg" />
                 <h4> מנות קטנות </h4>
-            </div>
-        </div>
-        <div class="Card">
-            <a href="RecepiePages/MainDishAll.aspx">
-            <div class="insideCardContainer">
-                <img src="pics/Pizza.jpg" />
-                <h4> מנות גדולות  </h4>
-            </div>    
             </a>
         </div>
         <div class="Card">
-            <div class="insideCardContainer">
+            <a href="RecepiePages/MainDishAll.aspx" class="insideCardContainer">
+                <img src="pics/Pizza.jpg" />
+                <h4> מנות גדולות  </h4>
+            </a>
+        </div>
+        <div class="Card">
+            <a href="RecepiePages/DesertDishAll.aspx" class="insideCardContainer">
                 <img src="pics/CrunchChocolate.jpg" />
                 <h4> קינוחים </h4>
-            </div>    
+            </a>    
         </div>    
     </div>
 </asp:Content>

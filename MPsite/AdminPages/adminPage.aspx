@@ -33,6 +33,7 @@
     </div>
 <%}else{ %>
     <div class="center">
+        <img src="../pics/Lock.png" class="lockImg" />
         <h1 class="noPerm">אינך מנהל</h1>
         <h3 class="noPerm"> אין לך הרשאה לצפות בדף זה </h3>
         <a href='index.aspx' class='linkToIndex'><h4>[ חזור לדף הראשי ]</h4></a>

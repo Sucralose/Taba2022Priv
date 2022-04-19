@@ -116,6 +116,7 @@
     <Content Include="AdminPages\deleteUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="LoggedInUserPages\Forum.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -125,15 +126,19 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ImageGallery.aspx" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="loginAdmin.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="pics\ChickenNuggets.jpg" />
+    <Content Include="pics\Cookies.jpg" />
     <Content Include="pics\CrunchChocolate.jpg" />
     <Content Include="pics\Kebab.jpg" />
     <Content Include="pics\KinamonRoll.jpg" />
     <Content Include="pics\Lime.png" />
+    <Content Include="pics\Lock.png" />
+    <Content Include="pics\OrangeCake.jpg" />
     <Content Include="pics\Pizza.jpg" />
     <Content Include="pics\Purple.png" />
     <Content Include="pics\Ravioli.jpg" />
@@ -147,10 +152,19 @@
     <Content Include="AdminPages\ShowHob1AndBorn2000To2006.aspx" />
     <Content Include="AdminPages\ShowMaleAndPrefix.aspx" />
     <Content Include="AdminPages\ShowTelAvivOrModiin.aspx" />
+    <Content Include="RecepiePages\ChickenNuggets.aspx" />
+    <Content Include="RecepiePages\CrunchChocolate.aspx" />
+    <Content Include="RecepiePages\DesertDishAll.aspx" />
+    <Content Include="RecepiePages\Kebab.aspx" />
+    <Content Include="RecepiePages\KinamonRoll.aspx" />
     <Content Include="RecepiePages\MainDishAll.aspx" />
+    <Content Include="RecepiePages\OrangeCake.aspx" />
     <Content Include="RecepiePages\Pizza.aspx" />
+    <Content Include="RecepiePages\RedChicken.aspx" />
     <Content Include="RecepiePages\RedCuba.aspx" />
     <Content Include="RecepiePages\ShoitLevana.aspx" />
+    <Content Include="RecepiePages\StarterDishAll.aspx" />
+    <Content Include="Styles\CardStyles.css" />
     <Content Include="Styles\MasterStyles.css" />
     <Content Include="Styles\NotAdminStyle.css" />
     <Content Include="AdminPages\ShowTable.aspx" />
@@ -226,8 +240,22 @@
     <Compile Include="AdminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoggedInUserPages\Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedInUserPages\Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery.aspx.cs">
+      <DependentUpon>ImageGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery.aspx.designer.cs">
+      <DependentUpon>ImageGallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -300,6 +328,41 @@
     <Compile Include="AdminPages\SimpleQuery.aspx.designer.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RecepiePages\ChickenNuggets.aspx.cs">
+      <DependentUpon>ChickenNuggets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\ChickenNuggets.aspx.designer.cs">
+      <DependentUpon>ChickenNuggets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\CrunchChocolate.aspx.cs">
+      <DependentUpon>CrunchChocolate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\CrunchChocolate.aspx.designer.cs">
+      <DependentUpon>CrunchChocolate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\DesertDishAll.aspx.cs">
+      <DependentUpon>DesertDishAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\DesertDishAll.aspx.designer.cs">
+      <DependentUpon>DesertDishAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\Kebab.aspx.cs">
+      <DependentUpon>Kebab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\Kebab.aspx.designer.cs">
+      <DependentUpon>Kebab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\KinamonRoll.aspx.cs">
+      <DependentUpon>KinamonRoll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\KinamonRoll.aspx.designer.cs">
+      <DependentUpon>KinamonRoll.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RecepiePages\MainDishAll.aspx.cs">
       <DependentUpon>MainDishAll.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -307,12 +370,26 @@
     <Compile Include="RecepiePages\MainDishAll.aspx.designer.cs">
       <DependentUpon>MainDishAll.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RecepiePages\OrangeCake.aspx.cs">
+      <DependentUpon>OrangeCake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\OrangeCake.aspx.designer.cs">
+      <DependentUpon>OrangeCake.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RecepiePages\Pizza.aspx.cs">
       <DependentUpon>Pizza.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RecepiePages\Pizza.aspx.designer.cs">
       <DependentUpon>Pizza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\RedChicken.aspx.cs">
+      <DependentUpon>RedChicken.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\RedChicken.aspx.designer.cs">
+      <DependentUpon>RedChicken.aspx</DependentUpon>
     </Compile>
     <Compile Include="RecepiePages\RedCuba.aspx.cs">
       <DependentUpon>RedCuba.aspx</DependentUpon>
@@ -327,6 +404,13 @@
     </Compile>
     <Compile Include="RecepiePages\ShoitLevana.aspx.designer.cs">
       <DependentUpon>ShoitLevana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepiePages\StarterDishAll.aspx.cs">
+      <DependentUpon>StarterDishAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecepiePages\StarterDishAll.aspx.designer.cs">
+      <DependentUpon>StarterDishAll.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
