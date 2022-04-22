@@ -10,7 +10,7 @@
 
 namespace MPsite
 {
-    public partial class Froum
+    public partial class WeightConverter
     {
     }
 }

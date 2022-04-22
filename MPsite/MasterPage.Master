@@ -36,13 +36,13 @@
                 [<a href="../index.aspx"> דף הבית </a>]
                 [<a href="../loginAdmin.aspx"> כניסת מנהל </a>]
                 [<a href="../Survey.aspx"> סקר </a>]
-                [<a href="ImageGallery.aspx"> גלריית תמונות </a>]
+                [<a href="../ImageGallery.aspx"> גלריית תמונות </a>]
                 [<a href="../RecepiePages/DesertDishAll.aspx"> קינוחים </a>]
-                [<a href="../RecepiePages/MainDishAll.aspx"> מנות גדולות </a>]
-                [<a href="../RecepiePages/StarterDishAll.aspx"> מנות קטנות </a>]
+                [<a href="../RecepiePages/MainDishAll.aspx"> מנות עיקריות </a>]
+                [<a href="../RecepiePages/StarterDishAll.aspx"> מנות ראשונות </a>]
                 <!-- בחירה רק למשתמשים רשומים--->
                 <%if (Session["uName"].ToString() != "אורח"){ %>
-                    [<a href="../LoggedInUsers/Forum.aspx"> פורום </a>]
+                    
                 <%} %>
                
             </td>

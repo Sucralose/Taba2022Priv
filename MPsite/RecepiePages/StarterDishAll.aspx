@@ -3,14 +3,14 @@
     <link href="../Styles/CardStyles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 class="Title">מנות קטנות</h1>
+    <h1 class="Title">מנות ראשונות</h1>
     <hr />
     <br />
     <div class="FlexContainer">       
         <div class="Card">
-            <a href="RedChicken.aspx" class="insideCardContainer">
-                <img src="../pics/RedChicken.jpg" />
-                <h4> שוק עוף </h4>
+            <a href="Pizza.aspx" class="insideCardContainer">
+                <img src="../pics/Pizza.jpg" />
+                <h4> פיצה </h4>
             </a>
         </div>
         <div class="Card">

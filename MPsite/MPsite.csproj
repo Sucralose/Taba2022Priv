@@ -116,7 +116,6 @@
     <Content Include="AdminPages\deleteUser.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="LoggedInUserPages\Forum.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -170,6 +169,7 @@
     <Content Include="AdminPages\ShowTable.aspx" />
     <Content Include="AdminPages\SimpleQuery.aspx" />
     <Content Include="ReigisterPage.aspx" />
+    <Content Include="Converter.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -239,13 +239,6 @@
     </Compile>
     <Compile Include="AdminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoggedInUserPages\Forum.aspx.cs">
-      <DependentUpon>Forum.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoggedInUserPages\Forum.aspx.designer.cs">
-      <DependentUpon>Forum.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -453,6 +446,13 @@
     </Compile>
     <Compile Include="ReigisterPage.aspx.designer.cs">
       <DependentUpon>ReigisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Converter.aspx.cs">
+      <DependentUpon>Converter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Converter.aspx.designer.cs">
+      <DependentUpon>Converter.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

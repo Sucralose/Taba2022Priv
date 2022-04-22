@@ -50,13 +50,13 @@
         <div class="Card">
             <a href="RecepiePages/StarterDishAll" class="insideCardContainer">
                 <img src="pics/ChickenNuggets.jpg" />
-                <h4> מנות קטנות </h4>
+                <h4> מנות ראשונות </h4>
             </a>
         </div>
         <div class="Card">
             <a href="RecepiePages/MainDishAll.aspx" class="insideCardContainer">
-                <img src="pics/Pizza.jpg" />
-                <h4> מנות גדולות  </h4>
+                <img src="pics/ShoitLevana.jpg" />
+                <h4> מנות עיקריות  </h4>
             </a>
         </div>
         <div class="Card">
