@@ -33,13 +33,15 @@
             <td class="MPmenu" colspan="3">
                 <!-- התפריט ראשי -->
 
-                [<a href="../index.aspx"> דף הבית </a>]
-                [<a href="../loginAdmin.aspx"> כניסת מנהל </a>]
-                [<a href="../Survey.aspx"> סקר </a>]
-                [<a href="../ImageGallery.aspx"> גלריית תמונות </a>]
-                [<a href="../RecepiePages/DesertDishAll.aspx"> קינוחים </a>]
-                [<a href="../RecepiePages/MainDishAll.aspx"> מנות עיקריות </a>]
-                [<a href="../RecepiePages/StarterDishAll.aspx"> מנות ראשונות </a>]
+                [<a class="MPLink" href="../index.aspx"> דף הבית </a>]
+                [<a class="MPLink" href="../loginAdmin.aspx"> כניסת מנהל </a>]
+                [<a class="MPLink" href="../Survey.aspx"> סקר </a>]
+                [<a class="MPLink" href="../ImageGallery.aspx"> גלריית תמונות </a>]
+                [<a class="MPLink" href="../Converter.aspx"> ממיר מידות </a>]
+                [<a class="MPLink" href="../RecepiePages/DesertDishAll.aspx"> קינוחים </a>]
+                [<a class="MPLink" href="../RecepiePages/MainDishAll.aspx"> מנות עיקריות </a>]
+                [<a class="MPLink" href="../RecepiePages/StarterDishAll.aspx"> מנות ראשונות </a>]
+                
                 <!-- בחירה רק למשתמשים רשומים--->
                 <%if (Session["uName"].ToString() != "אורח"){ %>
                     

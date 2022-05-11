@@ -89,16 +89,16 @@ namespace MPsite
 
             str += "<table border = '1' dir='ltr'>";
 
-            str += "<tr><td align= 'center'> אפשרות א </td>";
+            str += "<tr><td align= 'center'> כל יום </td>";
             str += $"<td width='500px'><img src='pics/Red.png' height='30' width='{w[0]}' /> </td></tr>";
 
-            str += "<tr> <td align= 'center'> אפשרות ב </td>";
+            str += "<tr> <td align= 'center'> כ4-6 פעמים בשבוע </td>";
             str += $"<td width='500px'> <img src='pics/Purple.png' height='30' width='{w[1]}' /></td></tr>";
 
-            str += "<tr> <td align= 'center'> אפשרות ג </td>";
+            str += "<tr> <td align= 'center'> פחות מ4 פעמים בשבוע </td>";
             str += $"<td width='500px'> <img src='pics/Lime.png' height='30' width='{w[2]}' /></td></tr>";
 
-            str += "<tr> <td align= 'center'> אפשרות ד </td>";
+            str += "<tr> <td align= 'center'> כלל לא </td>";
             str += $"<td width='500px'> <img src='pics/Yellow.png' height='30' width='{w[3]}' /></td></tr>";
 
             str += "</table>";

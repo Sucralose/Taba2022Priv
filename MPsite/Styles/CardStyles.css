@@ -14,6 +14,10 @@
     border-radius: 10%; /*עיגול הגבול*/
 }
 
+.Card:hover {
+    flex-grow:1.5;
+}
+
 .insideCardContainer img { /*תמונות בקונטיינר*/
     max-width:100%;
     border-radius: 10%; /*עיגול התמונות*/
@@ -37,5 +41,5 @@ body {
 
 .Title {
     text-align: center;
+    color: #b39c79 !important;
 }
-

@@ -7,7 +7,7 @@
     <hr />
     <br />
     <img src="../pics/CrunchChocolate.jpg" />
-    <h2>מצרכים <span class="amount">ל2 עוגות גדולות בתסנית מלבנית</span></h2>
+    <h2>מצרכים <span class="amount">ל2 יחידות</span></h2>
     <h3>לבצק</h3>
     <ul>
         <li>4 כוסות קמח</li>

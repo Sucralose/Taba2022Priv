@@ -1,6 +1,6 @@
 ﻿body {
     direction: rtl;
-    background-color: #E0F1FF;
+    background-color: #FAFDFF;
     font-family: Arial;
 }
 
@@ -48,4 +48,14 @@
     text-align: center;
     font-family: Arial;
     font-size: 1.5rem;
+}
+
+.MPLink:hover {
+    font-size: 21px;
+    color: #B39C79;
+}
+
+.MPLink {
+    font-size: 17px;
+    color: #B39C79;
 }
