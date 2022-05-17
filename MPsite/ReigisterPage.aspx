@@ -24,8 +24,8 @@
     <script>
         function checkForm() {
             
-            var valid = true;
-            var element, elementMessage;
+            let valid = true;
+            let element, elementMessage;
             //---בדיקת תקינות שם משתמש---
             element = document.getElementById("userName").value;
             
