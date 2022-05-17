@@ -26,9 +26,9 @@
     <h4>[<a href="ShowTable.aspx">הצג את כל המשתמשים</a>]</h4>
     <h4>[<a href="deleteUser.aspx"> מחק משתמשים </a>]</h4>
     <h4>[<a href="ShowFemaleAndGmail.aspx">הראה את כל המשתמשים ממין נקבה שהדוא"ל שלהן הוא gmail</a>]</h4>
-    <h4>[<a href="ShowMaleAndPrefix.aspx">הראה את כל המתמשים הזכרים שהקידומת שלהם היא 054</a>]</h4>
+    <h4>[<a href="ShowMaleAndPrefix.aspx"> הראה את כל המתמשים הזכרים שהקידומת שלהם היא 054 או 052</a>]</h4>
     <h4>[<a href="ShowHob1AndBorn2000To2006.aspx">הראה את כל המשתמשים שאוהבים מחשבים ונולדו בן השנים 2000 ל2006</a>]</h4>
-    <h4>[<a href="ShowTelAvivOrModiin.aspx">הראה את כל המשתמשים שגרים במודיעין או תל-אביב</a>]</h4>
+    <h4>[<a href="ShowTelAvivOrModiin.aspx"> הראה את כל הנשים שגרות במודיעין או תל-אביב </a>]</h4>
 
     </div>
 <%}else{ %>

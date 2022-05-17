@@ -29,7 +29,7 @@ namespace MPsite
                 string fileName = "usersDB.mdf";
                 string tableName = "usersTbl";
 
-                sqlSelect = $"SELECT * FROM {tableName} where city in (N'תל-אביב' , N'מודיעין' )";
+                sqlSelect = $"SELECT * FROM {tableName} where city in (N'תל-אביב' , N'מודיעין' ) and gender ='female' ";
                 DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
                 int length = table.Rows.Count;
                 if (length == 0)
