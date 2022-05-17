@@ -29,7 +29,7 @@ namespace MPsite
                 string fileName = "usersDB.mdf";
                 string tableName = "usersTbl";
 
-                sqlSelect = $"SELECT * FROM {tableName} where gender='male' and prefix = '054' ";
+                sqlSelect = $"SELECT * FROM {tableName} where gender='male' and ( prefix = '054' or prefix = '052' ) ";
                 DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
                 int length = table.Rows.Count;
                 if (length == 0)

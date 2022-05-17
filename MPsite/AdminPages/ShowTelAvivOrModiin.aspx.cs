@@ -14,7 +14,7 @@ namespace MPsite
         public string sqlSelect = "";
 
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {   
             if (Session["admin"] != "yes")
             {
                 msg = "<div class='center'>";
@@ -29,7 +29,7 @@ namespace MPsite
                 string fileName = "usersDB.mdf";
                 string tableName = "usersTbl";
 
-                sqlSelect = $"SELECT * FROM {tableName} where city like N'תל-אביב' or city like N'מודיעין' ";
+                sqlSelect = $"SELECT * FROM {tableName} where city in (N'תל-אביב' , N'מודיעין' )";
                 DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
                 int length = table.Rows.Count;
                 if (length == 0)

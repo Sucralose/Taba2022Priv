@@ -16,7 +16,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
         <% if (Session["admin"].ToString() == "yes"){%>
-     <h1>טבלת כל המשתמשים הזכרים שקידומת הטלפון שלהם היא 054</h1>
+     <h1>טבלת כל המשתמשים הזכרים שקידומת הטלפון שלהם היא 054 או 052.</h1>
     <%}%>
        
         <h2> <%= sqlSelect %> </h2>
